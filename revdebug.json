@@ -1,0 +1,36 @@
+{
+    "solution": "revdebug-tutorial-nodeweb",
+
+    ".server": {
+        "application": "Server",
+        "files": "server.js",
+
+        ".worker_thread": {
+            "files": "worker.js"
+        }
+    },
+
+    ".web": {
+        "target": "web",
+        "sourceMap": true,
+        "path": "public",
+
+        ".html": {
+            "application": "Browser",
+            "files": "js/html*.js",
+            "index": "public/index.html"
+        },
+
+        ".webworkerinject": {
+            "application": "Browser Injected Worker",
+            "runtime": "inject",
+            "files": "js/webworkerinject.js"
+        },
+
+        ".webworkerlocal": {
+            "application": "Browser Local Worker",
+            "runtime": "local",
+            "files": "js/webworkerlocal.js"
+        }
+    }
+}
