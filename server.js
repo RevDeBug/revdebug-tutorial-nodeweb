@@ -24,7 +24,7 @@ app.get('/:name', (req, res) => {
 })
 
 app.use(function (err, req, res, next) {
-    revdebug.unhandled(err);
+    revdebug.exception(err);
     next(err);
 });
 
