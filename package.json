@@ -4,7 +4,7 @@
   "description": "",
   "main": "Node and Web JS Example",
   "dependencies": {
-    "@revdebug/revdebug": "^1.0.0b989",
+    "@revdebug/revdebug": "^1.0.0b1000",
     "express": "^4.17.1"
   },
   "scripts": {
