@@ -1,0 +1,26 @@
+{
+    "host": "revdebug.server",
+    "secure": true,
+    "apm": true,
+    ".server": {
+        "application": "Node.js Application Server",
+        "target": "node",
+        "solution": "revdebug-tutorial-nodeweb-server",
+        "files": ["app.js", "ErrorHandler.js" ]
+    },
+    ".client": {
+        "solution": "revdebug-tutorial-nodeweb-client",
+        "application": "Node.js Application Client",
+        "useFMP": true,
+        "screen": true,
+        "target": "web",
+        "sourceMap": true,
+        "path": "public",
+        "files": "**/*.js",
+        "index": "views/index.ejs",
+        "type": "module",
+        "mode": "onevent",
+    "entrySpan": "multi",
+    "sw_cold_endpoint": true
+    }
+}

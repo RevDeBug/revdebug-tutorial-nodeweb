@@ -1,0 +1,128 @@
+/* invoices.css */
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Jasne tło dla całej strony */
+}
+
+/* Centering the table */
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Dodatkowe marginesy */
+}
+
+/* Table styling */
+table {
+    width: 80%; /* Szerokość tabeli */
+    border-collapse: collapse; /* Usunięcie przerw między komórkami */
+    margin: 20px 0; /* Marginesy wokół tabeli */
+}
+
+/* Table header styling */
+th {
+    background-color: rgb(87, 146, 146);
+    color: white; /* Białe napisy */
+    padding: 10px; /* Padding w nagłówku */
+}
+
+/* Table cell styling */
+td {
+    padding: 10px; /* Padding w komórkach */
+    text-align: center; /* Wyśrodkowanie tekstu w komórkach */
+    border: 1px solid #ccc; /* Szary obramowanie */
+}
+
+/* Input container styling */
+.input-container {
+    margin-top: 20px; /* Dodatkowy margines na górze */
+}
+
+/* Styling for buttons */
+.red-button {
+    background-color:red; /* Czerwone tło */
+    color: white; /* Białe napisy */
+    border: none; /* Usunięcie obramowania */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Kursor wskazujący */
+}
+.input-container {
+    display: flex; /* Umożliwia flexbox */
+    justify-content: space-between; /* Rozdziela elementy */
+    align-items: flex-start; /* Ustala wyrównanie na górze */
+    margin-top: 20px; /* Odstęp od góry */
+}
+
+.form-inputs {
+    flex: 1; /* Pozwól na rozciąganie do 1 części */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Wyrównanie do prawej */
+    margin-left: 20px; /* Odstęp od lewej */
+    margin-bottom: 10px; /* Odstęp od dolnej części */
+}
+#statusMessage {
+    margin-top: 10px; /* Dodaj odstęp od przycisków */
+    clear: both; /* Umożliwia wyczyszczenie wszelkich floatów */
+    /* Dodatkowe style dla statusMessage, jeśli potrzebne */
+}
+
+/* Stylizacja tabeli formularza */
+.form-table {
+    width: auto; /* Automatyczna szerokość tabeli */
+    border-collapse: collapse; /* Usunięcie przerw między komórkami */
+    border: none; /* Brak widocznych linii obramowania */
+}
+
+.form-table td {
+    padding: 5px; /* Odstępy wewnątrz komórek */
+    vertical-align: middle; /* Wyrównanie elementów w pionie */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+}
+
+/* Zachowanie reszty stylizacji */
+.input-container {
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 2px
+}
+
+#invoiceType {
+    text-transform: uppercase; /* Zmienia wszystkie litery na wielkie */
+    font-size: 1.1em; /* Zwiększa rozmiar czcionki */
+    padding: 5px; /* Dodaje trochę wewnętrznych odstępów */
+    border-radius: 5px; /* Dodaje zaokrąglenie do krawędzi */
+    border: 1px solid #ccc; /* Dodaje szare obramowanie */
+    background-color: #f9f9f9; /* Jasne tło */
+    color: #333; /* Ciemny kolor tekstu */
+    width: 100%;
+}
+#multiplier {
+    width: 100%;
+    font-size: 1.1em; /* Zwiększa rozmiar czcionki */
+    padding: 5px; /* Dodaje trochę wewnętrznych odstępów */
+    border-radius: 5px; /* Dodaje zaokrąglenie do krawędzi */
+    border: 1px solid #ccc; /* Dodaje szare obramowanie */
+    background-color: #f9f9f9; /* Jasne tło */
+    color: #333; /* Ciemny kolor tekstu */
+    text-transform: uppercase; /* W przypadku tekstu zamienia litery na wielkie */
+}
