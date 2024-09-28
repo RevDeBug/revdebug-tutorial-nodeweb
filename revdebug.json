@@ -1,36 +1,26 @@
 {
-    "solution": "revdebug-tutorial-nodeweb",
-
+    "host": "revdebug.server",
+    "secure": true,
+    "apm": true,
     ".server": {
-        "application": "Server",
-        "files": "server.js",
-
-        ".worker_thread": {
-            "files": "worker.js"
-        }
+        "application": "Node.js Application Server",
+        "target": "node",
+        "solution": "revdebug-tutorial-nodeweb-server",
+        "files": ["app.js", "ErrorHandler.js" ]
     },
-
-    ".web": {
+    ".client": {
+        "solution": "revdebug-tutorial-nodeweb-client",
+        "application": "Node.js Application Client",
+        "useFMP": true,
+        "screen": true,
         "target": "web",
         "sourceMap": true,
         "path": "public",
-
-        ".html": {
-            "application": "Browser",
-            "files": "js/html*.js",
-            "index": "public/index.html"
-        },
-
-        ".webworkerinject": {
-            "application": "Browser Injected Worker",
-            "runtime": "inject",
-            "files": "js/webworkerinject.js"
-        },
-
-        ".webworkerlocal": {
-            "application": "Browser Local Worker",
-            "runtime": "local",
-            "files": "js/webworkerlocal.js"
-        }
+        "files": "**/*.js",
+        "index": "views/index.ejs",
+        "type": "module",
+        "mode": "onevent",
+    "entrySpan": "multi",
+    "sw_cold_endpoint": true
     }
 }

@@ -1,19 +1,15 @@
 {
-  "name": "example-node-web",
-  "version": "1.0.0",
-  "description": "",
-  "main": "Node and Web JS Example",
-  "dependencies": {
-    "@revdebug/revdebug": "*",
-    "express": "^4.17.1"
-  },
   "scripts": {
-    "start": "node --experimental-worker server.js",
-    "build": "npx revd",
-    "clean": "npx revd --remove",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@revdebug/revdebug": "^6.4.2115",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }

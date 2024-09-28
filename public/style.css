@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 3px ;
+}
+
+.logo img {
+    height: 75px; /* Dostosuj wysokość logo */
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-left: 2px;
+}
+ 
+.nav-button {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 80px; /* Szerokość przycisków */
+    height: 80px; /* Wysokość przycisków */
+    background-color: red; /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    text-decoration: none; /* Bez podkreślenia */
+    border-radius: 8px; /* Zaokrąglenie rogów */
+    text-align: center;
+}
+
+.nav-button span {
+    margin-bottom: 1px; /* Odstęp między ikoną a tekstem */
+}
+
+.nav-button:hover {
+    background-color: darkred; /* Ciemniejszy kolor przy najechaniu */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #3e3e3e;
+    color: #fefefe;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+  }
+
+.container {
+     margin-top: 100px; 
+    
+}
+.logo-container {
+    margin-bottom: 20px; /* Odstęp poniżej logo */
+}
+
+.logo-container img {
+    max-width: 100%; /* Dostosowanie logo do szerokości */
+    height: auto; /* Utrzymanie proporcji */
+}
+

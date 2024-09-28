@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoices</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/invoices.css"> 
+    <script src="/js/invoices.js" defer></script> <!-- Link to your JS file -->
+    <%- include('index') %>
+</head>
+<body>
+    <%- include('header') %> <!-- Włączenie nagłówka -->
+    
+    <div class="container">
+        <h2>Invoices</h2>
+        <div class="table-container">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>Invoice Number</th>
+                        <th>Contractor</th>
+                        <th>Issue Date</th>
+                        <th>Due Date</th>
+                        <th>Sum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>135/ST/GD/05/2024</td>
+                        <td>BadData Inc.</td>
+                        <td>09/03/2024 22:22:10</td>
+                        <td>09/28/2024 03:18:10</td>
+                        <td>$62986.5</td>
+                    </tr>
+                    <tr>
+                        <td>88/SU/05/2024</td>
+                        <td>Upright S corp</td>
+                        <td>09/08/2024 05:43:10</td>
+                        <td>10/05/2024 03:18:10</td>
+                        <td>$85078.85</td>
+                    </tr>
+                    <tr>
+                        <td>222/ST/2024</td>
+                        <td>Exceptional LLC</td>
+                        <td>08/26/2024 03:18:10</td>
+                        <td>10/14/2024 03:18:10</td>
+                        <td>$152615.25</td>
+                    </tr>
+                    <!-- Random generated rows -->
+                    <tr>
+                        <td>400/TR/2024</td>
+                        <td>Quantum Tech</td>
+                        <td>07/10/2024 12:15:10</td>
+                        <td>07/30/2024 03:10:10</td>
+                        <td>$42999.99</td>
+                    </tr>
+                    <tr>
+                        <td>450/RT/05/2024</td>
+                        <td>GlobeTrotters Ltd.</td>
+                        <td>08/18/2024 09:25:10</td>
+                        <td>09/15/2024 03:18:10</td>
+                        <td>$72456.32</td>
+                    </tr>
+                    <tr>
+                        <td>475/AB/06/2024</td>
+                        <td>Pinnacle Corp</td>
+                        <td>07/25/2024 03:35:10</td>
+                        <td>08/10/2024 03:18:10</td>
+                        <td>$10989.00</td>
+                    </tr>
+                    <tr>
+                        <td>500/JH/07/2024</td>
+                        <td>StarFleet Enterprises</td>
+                        <td>08/01/2024 01:55:10</td>
+                        <td>08/20/2024 03:18:10</td>
+                        <td>$56325.67</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+     <div class="input-container">
+    <table class="form-table">
+        <tr>
+            <td><label for="multiplier">Cost Multiplier:</label></td>
+            <td><input id="multiplier" type="number" step="0.01" value="1.0"></td>
+        </tr>
+        <tr>
+            <td><label for="invoiceType">Invoice Type:</label></td>
+            <td>
+                <select id="invoiceType">
+                    <option value="standard">Standard</option>
+                    <option value="proforma">Proforma</option>
+                    <option value="recurring">Recurring</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <div class="button-container">
+        <button id="calculateBtn" class="btn btn-danger">Calculate</button>
+        <button id="sendBtn" class="btn btn-danger">Send</button>
+    </div>
+</div>
+
+        
+        <div id="statusMessage"></div> 
+    </div>
+    <%- include('footer') %> <!-- Włączenie stopki -->
+</body>
+</html>
