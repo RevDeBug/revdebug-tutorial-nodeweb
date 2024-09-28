@@ -48,7 +48,7 @@ function complexCalculation(multiplier, invoiceType) {
   }
 
   return intermediateValue;
-}
+} 
 
 function finalCalculation(value, invoiceType) {
   const divisor = invoiceType === 'recurring' ? 0 : 10;
