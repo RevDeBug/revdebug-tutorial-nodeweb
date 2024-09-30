@@ -16,6 +16,11 @@ Ensure the following tools are installed on your system:
 Node.js (version 18 or higher)
 RevDeBug npm module (either globally or locally installed)
 ### Installation Steps
+#### Clone the project
+Go to the directory where you want to clone the repository:
+```sh
+git clone https://github.com/RevDeBug/revdebug-tutorial-react-js
+```
 Configure RevDeBug's npm registry:
 ``` bash
 npm config set @revdebug:registry https://nexus.revdebug.com/repository/npm/
@@ -76,7 +81,7 @@ The server will start on http://localhost:3000.
 ## Running with Docker
 To run the NodeJs application using Docker, follow these steps:
 
-For more information on how to configure RevDeBug, see the [RevDeBug Configuration](#revdebug-configuration) section.
+Before running, configure revdebug.json. See [here](#revdebug-configuration) for how to do it.
 
 Build the Docker image:
 ```bash
